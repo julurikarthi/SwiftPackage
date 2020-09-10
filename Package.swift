@@ -25,7 +25,9 @@ let package = Package(
         .target(
             name: "ModuleX_Objc",
             dependencies: [], path: "Sources/ModuleX_Objc",
-             exclude: ["SwiftSources"]),
+            exclude: ["SwiftSources"],cSettings: [
+                .headerSearchPath("include")
+        ]),
         .target(
             name: "SwiftClasses",
             dependencies: [], path: "Sources/SwiftClasses"),
