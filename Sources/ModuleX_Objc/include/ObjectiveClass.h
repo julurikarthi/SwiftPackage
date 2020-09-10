@@ -10,7 +10,7 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_OSX
+#if TARGET_OS_SIMULATOR
 #import <AppKit/NSView.h>
 @interface ObjectiveClass : NSView
  @end
