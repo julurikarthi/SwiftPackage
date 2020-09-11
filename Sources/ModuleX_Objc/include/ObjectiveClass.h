@@ -18,7 +18,7 @@
 #elif TARGET_OS_MAC
 #import <AppKit/NSView.h>
 @interface PRView : NSView
-
+@property(nonatomic,strong) NSString *name;
 #endif
 // common code
 
