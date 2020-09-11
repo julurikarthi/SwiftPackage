@@ -9,5 +9,10 @@
 #import "TestObj.h"
 
 @implementation TestObj
-
+-(void)testIOS {
+    printf("cllaed testios");
+}
+-(void)testmac {
+    printf("cllaed testmac");
+}
 @end
