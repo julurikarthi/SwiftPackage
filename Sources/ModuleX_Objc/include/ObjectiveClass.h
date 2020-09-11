@@ -10,10 +10,19 @@
 
 #import <Foundation/Foundation.h>
 
-#if TARGET_OS_OSX
-#import <AppKit/NSView.h>
-@interface ObjectiveClass : NSView
- @end
-#endif
 
+#if TARGET_OS_IPHONE
+#import <UIKit/UIView.h>
+@interface ObjectiveClass : UIView
+
+#elif TARGET_OS_MAC
+#import <AppKit/NSView.h>
+@interface PRView : NSView
+
+#endif
+// common code
+
+
+
+@end
 
