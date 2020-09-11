@@ -10,7 +10,7 @@
 
 
 
-@implementation ObjectiveClass: NSView
+@implementation ObjectiveClass
 
 
 @end
