@@ -10,19 +10,14 @@
 
 #import <Foundation/Foundation.h>
 
-
-#if TARGET_OS_IPHONE
-#import <UIKit/UIView.h>
-@interface ObjectiveClass : UIView
-
-#elif TARGET_OS_MAC
-#import <AppKit/NSView.h>
-@interface PRView : NSView
-@property(nonatomic,strong) NSString *name;
-#endif
-// common code
-
-
-
+NS_ASSUME_NONNULL_BEGIN
+#if TARGET_OS_OSX
+@interface ObjectiveClass : NSObject
+-(void)testmac;
+-(void)testIOS;
 @end
+#endif
 
+
+
+NS_ASSUME_NONNULL_END
