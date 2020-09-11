@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 
 
-
+#if TARGET_OS_IOS
 @interface TestObj : NSObject
 @property(nonatomic,strong) NSString *name;
+-(void)testmac;
+-(void)testIOS;
 @end
-
-
+#endif
