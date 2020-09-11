@@ -12,5 +12,10 @@
 
 @implementation ObjectiveClass
 
-
+-(void)testmac {
+    printf("only for mac");
+}
+-(void)testIOS {
+    printf("only for mac");
+}
 @end
